@@ -16,6 +16,7 @@ matrix:
       rvm: system
 
 before_install:
+  - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   - export TRAVIS_COMMIT=$(git rev-parse --verify -q HEAD)
   - cd /usr/local
   - sudo rm -rf /usr/local/.git/refs /usr/local/.git/packed-refs
