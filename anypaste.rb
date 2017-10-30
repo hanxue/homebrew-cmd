@@ -1,8 +1,8 @@
 class Anypaste < Formula
   desc "File sharing site aggregator for *nix-like systems"
   homepage "https://anypaste.xyz"
-  url "https://github.com/markasoftware/anypaste/archive/v1.0.0.tar.gz"
-  sha256 "e7816d4df6a71627fe18bc3af2a29cfe1bfc4e84f124120ca48be90fdb89a674"
+  url "https://github.com/markasoftware/anypaste/archive/v1.0.1.tar.gz"
+  sha256 "f32d196d0be1aed06680f8a803abc59209596b96d3c99885817d8c059249154b"
   head "https://github.com/markasoftware/anypaste.git"
 
   bottle :unneeded
