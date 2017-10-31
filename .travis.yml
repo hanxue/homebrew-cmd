@@ -32,6 +32,7 @@ before_install:
   - rm -rf "$HOMEBREW_TAP_DIR"
   - ln -s "$PWD" "$HOMEBREW_TAP_DIR"
   - export HOMEBREW_DEVELOPER="1"
+  - export HOMEBREW_GITHUB_API_TOKEN="1a5613f217e5eee81d8722c05f838e946d7ee019"
   - ulimit -n 1024
 
 script:
