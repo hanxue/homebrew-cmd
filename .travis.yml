@@ -1,8 +1,18 @@
 language: ruby
-os: osx
-env: OSX=10.12
-osx_image: xcode8.3
-rvm: system
+matrix:
+  include:
+    - env: OSX=10.12
+      os: osx
+      osx_image: xcode8.3
+      rvm: system
+    - env: OSX=10.11
+      os: osx
+      osx_image: xcode8.2.1
+      rvm: system
+    - env: OSX=10.10
+      os: osx
+      osx_image: xcode7.2.1
+      rvm: system
 cache:
   directories:
     - $HOME/.gem/ruby
@@ -22,6 +32,7 @@ before_install:
   - rm -rf "$HOMEBREW_TAP_DIR"
   - ln -s "$PWD" "$HOMEBREW_TAP_DIR"
   - export HOMEBREW_DEVELOPER="1"
+  - export HOMEBREW_GITHUB_API_TOKEN="1a5613f217e5eee81d8722c05f838e946d7ee019"
   - ulimit -n 1024
 
 script:
